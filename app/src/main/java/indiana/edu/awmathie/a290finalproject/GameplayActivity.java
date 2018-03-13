@@ -41,9 +41,6 @@ public class GameplayActivity extends Activity implements View.OnClickListener, 
         ImageButton stopButton = layout.findViewById(R.id.btn_Stop);
         stopButton.setOnClickListener(this);
 
-        ImageButton rewindButton = layout.findViewById(R.id.btn_Rewind);
-        rewindButton.setOnClickListener(this);
-
         ImageButton fastFButton = layout.findViewById(R.id.btn_Fast_Forward);
         fastFButton.setOnClickListener(this);
 
@@ -54,8 +51,8 @@ public class GameplayActivity extends Activity implements View.OnClickListener, 
         clearButton.setOnClickListener(this);
 
         SeekBar speedBar = layout.findViewById(R.id.speedBar);
-        speedBar.setMax(99);
-        speedBar.setProgress(9);
+        speedBar.setMax(9);
+        speedBar.setProgress(4);
         speedBar.setOnSeekBarChangeListener(this);
 
         Intent intentHere = getIntent();
@@ -66,20 +63,20 @@ public class GameplayActivity extends Activity implements View.OnClickListener, 
             // we need to reload the old game
             gameData = intentHere.getStringExtra("SAVE_GAME");
             gameView = new GameView(this, null, Resources.getSystem().getDisplayMetrics().widthPixels,
-                    Resources.getSystem().getDisplayMetrics().heightPixels - 170, gameData);
+                    Resources.getSystem().getDisplayMetrics().heightPixels - 260, gameData);
             ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(Resources.getSystem().getDisplayMetrics().widthPixels,
-                    Resources.getSystem().getDisplayMetrics().heightPixels - 170);
+                    Resources.getSystem().getDisplayMetrics().heightPixels - 260);
             gameView.setLayoutParams(layoutParams);
         } else {
             // new game
             gameView = new GameView(this, Resources.getSystem().getDisplayMetrics().widthPixels,
-                    Resources.getSystem().getDisplayMetrics().heightPixels - 170);
+                    Resources.getSystem().getDisplayMetrics().heightPixels - 260);
             ConstraintLayout.LayoutParams layoutParams = new ConstraintLayout.LayoutParams(Resources.getSystem().getDisplayMetrics().widthPixels,
-                    Resources.getSystem().getDisplayMetrics().heightPixels - 170);
+                    Resources.getSystem().getDisplayMetrics().heightPixels - 260);
             gameView.setLayoutParams(layoutParams);
 
         }
-
+//was 170, now 260
         ConstraintLayout item = layout.findViewById(R.id.game_Layout);
         item.addView(gameView);
 
@@ -97,10 +94,6 @@ public class GameplayActivity extends Activity implements View.OnClickListener, 
             case R.id.btn_Stop:
                 // stop evolving generations
                 gameView.stopGame();
-                break;
-            case R.id.btn_Rewind:
-                // does nothing currently
-                gameView.rewind();
                 break;
             case R.id.btn_Fast_Forward:
                 // step forward one generation

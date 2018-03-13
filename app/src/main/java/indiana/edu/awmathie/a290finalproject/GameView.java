@@ -214,7 +214,7 @@ public class GameView extends View {
         canvas.drawColor(backgroundColor);
 
         //drawing cells
-        for (int i = 0; i < curColumns - 1; i++) {
+        for (int i = 0; i < curColumns; i++) {
             for (int j = 0; j < curRows - 1; j++) {
                 if (cells[i + 1][j + 1].alive) {
                     canvas.drawRect(i * curCellSize, j * curCellSize,
@@ -267,7 +267,7 @@ public class GameView extends View {
                 while (active) {
                     step();
                     postInvalidate();
-                    SystemClock.sleep(200/speed);
+                    SystemClock.sleep(500/speed);
                 }
             }
         }).start();

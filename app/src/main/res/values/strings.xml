@@ -6,6 +6,7 @@
     <string name="AboutButtonLabel">About</string>
     <string name="OptionsButtonLabel">Options</string>
     <string name="NoSavesText">You don\'t have any saves yet!!</string>
+    <string name="speedSliderLabel">Speed</string>
 
     <string name="VolumeLabel">Volume</string>
     <string name="AboutText">Conway\'s game of life is a cellular automaton. That means you touch blocks to form patterns and then press play to see

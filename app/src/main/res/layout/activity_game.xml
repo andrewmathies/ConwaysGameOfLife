@@ -9,7 +9,7 @@
 
     <ImageButton
         android:id="@+id/btn_Play"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
@@ -21,65 +21,57 @@
 
     <ImageButton
         android:id="@+id/btn_Stop"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/gamebuttonshape"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pause"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_Play" />
-
-    <ImageButton
-        android:id="@+id/btn_Rewind"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/gamebuttonshape"
-        android:scaleType="fitCenter"
-        android:src="@drawable/rewind"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_Stop" />
-
-    <ImageButton
-        android:id="@+id/btn_Fast_Forward"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/gamebuttonshape"
-        android:scaleType="fitCenter"
-        android:src="@drawable/fast_forward"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_Rewind" />
-
-    <ImageButton
-        android:id="@+id/btn_Save_Game"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/gamebuttonshape"
-        android:scaleType="fitCenter"
-        android:src="@drawable/save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_Fast_Forward" />
-
-    <ImageButton
-        android:id="@+id/btn_Clear_Screen"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/gamebuttonshape"
         android:scaleType="fitCenter"
-        android:src="@drawable/cancel"
+        android:src="@drawable/pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Fast_Forward"
+        app:layout_constraintStart_toEndOf="@+id/btn_Play" />
+
+    <ImageButton
+        android:id="@+id/btn_Fast_Forward"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fast_forward"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_Save_Game" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_Save_Game"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Clear_Screen"
+        app:layout_constraintStart_toEndOf="@+id/btn_Fast_Forward" />
+
+    <ImageButton
+        android:id="@+id/btn_Clear_Screen"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <SeekBar
         android:id="@+id/speedBar"
@@ -90,6 +82,18 @@
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="62dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:text="@string/speedSliderLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/speedTextColor"
+        app:layout_constraintBottom_toTopOf="@+id/speedBar"
         app:layout_constraintStart_toStartOf="parent" />
 
 
