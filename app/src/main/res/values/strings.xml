@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">A290 Final Project</string>
+    <string name="MainTitle">Conway\'s Game of Life</string>
+    <string name="SavedButtonLabel">Saved</string>
+    <string name="NewButtonLabel">New Game</string>
+    <string name="AboutButtonLabel">About</string>
+    <string name="OptionsButtonLabel">Options</string>
+    <string name="NoSavesText">You don\'t have any saves yet!!</string>
+
+    <string name="VolumeLabel">Volume</string>
+    <string name="AboutText">Conway\'s game of life is a cellular automaton. That means you touch blocks to form patterns and then press play to see
+        how the pattern you entered evolves over time! Most patterns will die quickly or not do anything, but some can provide really interesting displays.
+        Although this isn\'t super related, I thought it was interesting that Conway\'s Game of Life technically qualifies as a Turing complete machine! \n\n
+        If you\'re interested in learning more, check out the wikipedia page: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life \n\n
+        Music is: Chillin Hard courtesy of: Kevin MacLeod (incompetech.com) \n
+Licensed under Creative Commons: By Attribution 3.0 License \n
+http://creativecommons.org/licenses/by/3.0/ \n\n The background image is from: https://pixabay.com/en/retro-perspective-grid-tron-synth-2426631/ \n\n
+    And the button icons (except for the big red x and floppy disk) are from: https://www.iconfinder.com/iconsets/doodle-audio-video-game</string>
+</resources>

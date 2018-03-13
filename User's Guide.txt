@@ -1,0 +1,37 @@
+(I ran out of time and couldn't comment every file.)
+
+Conway's game of life is a cellular automaton. That means you touch blocks to form patterns and then press play to see
+how the pattern you entered evolves over time! Most patterns will die quickly or not do anything, but some can provide really interesting displays.
+Although this isn't neccesarily related to the project, I thought it was interesting that Conway's Game of Life technically qualifies as a Turing 
+complete machine! If you're interested in learning more about the game, check out the wikipedia page: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+
+To play the game just press the New Game button. To access a previously saved game, press the Saved button. You currently can't name your saves, they are 
+just numbered in chronological order. To change the volume, press the Options button and adjust the slider. To see where I got my assets from, press the About button.
+
+PLAYING THE GAME
+-----------------
+
+Click on a cell to switch a cell from being dead to alive or vice versa. Once you have entered a pattern, press the play button to watch it evolve. The rules for
+whether a cell will live or die are: 
+
+Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+Any live cell with two or three live neighbours lives on to the next generation.
+Any live cell with more than three live neighbours dies, as if by overpopulation.
+Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+
+Press the stop button to stop the pattern from evolving, and toggle cells. Unfortunately I didn't have time to implement a backwards running version, so the 
+rewind button currently doesn't do anything. The 'fast forward' button will cause the game to step forward one generation. The floppy disk button will save whatever
+your current set of cells is to internal storage. You can't name your save, they are just numbered in chronological order. Pressing the X button will delete whatever
+your current set of cells is.
+
+NOTES/THOUGHTS
+----------------
+I'm not sure why the speed seekbar isn't displaying in the game, I'm pretty sure it would work to change the speed at which generations would evolve. All of the code
+for it is in the project, it's just not showing up, I think my GameView is covering it up somehow.
+
+I also am not entirely sure why you can't toggle cells on the far right column, I think it's probably not too hard of a fix, I'm unfortunately just out of time.
+
+There was a lot left I still wanted to implement, mainly having the set of cells being bigger than what the screen displays and being able to move the "camera" to different
+parts of the cells and zoom in or out by pinching. Unfortunately I fell prey to root of all evil: premature optimization, and spent about 12 hours trying to write cleanly
+seperated game logic code and UI code that implemented best practice threading. I had no idea what I was doing, and ended up wasting most of that time, but I am still proud
+of what I was able to accomplish in a week. I hope you enjoyed my app!

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/start_background">
+
+    <Button
+        android:id="@+id/btn_Saved"
+        android:textColor="#000000"
+        android:textSize="21sp"
+
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/SavedButtonLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_New" />
+
+
+    <Button
+        android:id="@+id/btn_New"
+
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+        android:shadowDy="2"
+
+        android:shadowRadius="5"
+        android:text="@string/NewButtonLabel"
+        android:textColor="#000000"
+
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_text_view" />
+
+    <Button
+        android:id="@+id/btn_About"
+        android:textColor="#000000"
+        android:textSize="21sp"
+
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/AboutButtonLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Options" />
+
+    <Button
+        android:id="@+id/btn_Options"
+        android:textColor="#000000"
+        android:textSize="21sp"
+
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#666666"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/OptionsButtonLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Saved" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/MainTitle"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

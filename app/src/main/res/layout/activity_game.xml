@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor">
+
+    <ImageButton
+        android:id="@+id/btn_Play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_Stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Play" />
+
+    <ImageButton
+        android:id="@+id/btn_Rewind"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rewind"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Stop" />
+
+    <ImageButton
+        android:id="@+id/btn_Fast_Forward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fast_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Rewind" />
+
+    <ImageButton
+        android:id="@+id/btn_Save_Game"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Fast_Forward" />
+
+    <ImageButton
+        android:id="@+id/btn_Clear_Screen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/gamebuttonshape"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Save_Game" />
+
+    <SeekBar
+        android:id="@+id/speedBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
